@@ -1,0 +1,61 @@
+{
+  "name": "arHistory",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app/server.js",
+    "server": "node app/server.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "dotenv": "^6.0.0",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "express": "^4.16.3",
+    "it": "^1.1.1",
+    "jsonwebtoken": "^8.3.0",
+    "mysql": "^2.16.0",
+    "mysql2": "^1.6.1",
+    "node-fetch": "^2.2.0",
+    "object.assign": "^4.1.0",
+    "object.entries": "^1.0.4",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "scrape": "^0.2.3",
+    "scrape-it": "^5.0.5",
+    "sequelize": "^4.38.0"
+  },
+  "devDependencies": {
+    "babel-jest": "23.4.2",
+    "babel-register": "^6.26.0",
+    "babel-tape-runner": "^2.0.1",
+    "editorconfig-tools": "^0.1.1",
+    "jest": "23.5.0"
+  },
+  "jest": {
+    "collectCoverage": false,
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/coverage/**",
+      "!**rn-cli.config.js**",
+      "!**/database-mySql/config.js**",
+      "!**config.js**",
+      "!**hnocSearch.js**",
+      "!**index.js**",
+      "!**/js/ARHist.js**",
+      "!**App.js**"
+    ],
+    "preset": "react-native"
+  }
+}
